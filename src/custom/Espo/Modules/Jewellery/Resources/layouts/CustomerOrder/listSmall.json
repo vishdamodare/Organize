@@ -1,0 +1,16 @@
+[
+    {
+        "name": "number",
+        "link": true
+    },
+    {
+        "name": "orderDate"
+    },
+    {
+        "name": "grandTotal",
+        "align": "right"
+    },
+    {
+        "name": "status"
+    }
+]

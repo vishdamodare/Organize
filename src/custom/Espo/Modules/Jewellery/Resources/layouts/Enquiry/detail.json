@@ -1,0 +1,86 @@
+[
+    {
+        "label": "Enquiry",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "number"
+                }
+            ],
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "enquiryDate"
+                }
+            ],
+            [
+                {
+                    "name": "category"
+                },
+                {
+                    "name": "source"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "priority"
+                }
+            ],
+            [
+                {
+                    "name": "nextFollowUpDate"
+                },
+                {
+                    "name": "expectedPurchaseDate"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Jewellery Requirement",
+        "rows": [
+            [
+                {
+                    "name": "metalType"
+                },
+                {
+                    "name": "purity"
+                }
+            ],
+            [
+                {
+                    "name": "gemstoneType"
+                },
+                {
+                    "name": "quantity"
+                }
+            ],
+            [
+                {
+                    "name": "budget"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "attachments"
+                },
+                false
+            ]
+        ]
+    }
+]

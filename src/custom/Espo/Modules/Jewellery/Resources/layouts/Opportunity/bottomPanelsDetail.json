@@ -1,0 +1,12 @@
+{
+    "quotations": {
+        "index": 0
+    },
+    "customerOrders": {
+        "index": 1
+    },
+    "stream": {
+        "sticked": false,
+        "index": 2
+    }
+}

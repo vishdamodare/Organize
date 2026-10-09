@@ -1,0 +1,37 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "type"
+                }
+            ],
+            [
+                {
+                    "name": "contactPerson"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "customerStatus"
+                }
+            ],
+            [
+                {
+                    "name": "billingAddress"
+                },
+                false
+            ]
+        ]
+    }
+]

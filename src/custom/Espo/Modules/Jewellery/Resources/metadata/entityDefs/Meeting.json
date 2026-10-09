@@ -1,0 +1,7 @@
+{
+    "fields": {
+        "parent": {
+            "entityList": ["Account", "Opportunity", "Enquiry"]
+        }
+    }
+}

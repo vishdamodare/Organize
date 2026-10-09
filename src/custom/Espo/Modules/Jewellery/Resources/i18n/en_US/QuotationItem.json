@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "name": "Description",
+        "product": "Product",
+        "quantity": "Qty",
+        "unitPrice": "Unit Price",
+        "discountPercent": "Discount %",
+        "taxPercent": "Tax %",
+        "lineTotal": "Line Total",
+        "sortOrder": "Order",
+        "quotation": "Quotation"
+    },
+    "links": {
+        "quotation": "Quotation",
+        "product": "Product"
+    },
+    "labels": {
+        "Create QuotationItem": "Add Line"
+    }
+}

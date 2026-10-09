@@ -1,0 +1,17 @@
+[
+    {
+        "name": ":assignedUser"
+    },
+    {
+        "name": "teams"
+    },
+    {
+        "name": "nextFollowUpAt"
+    },
+    {
+        "name": "lastInteractionAt"
+    },
+    {
+        "name": "createdAt"
+    }
+]

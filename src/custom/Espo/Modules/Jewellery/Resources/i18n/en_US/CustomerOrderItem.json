@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "name": "Description",
+        "product": "Product",
+        "quantity": "Qty",
+        "unitPrice": "Unit Price",
+        "discountPercent": "Discount %",
+        "taxPercent": "Tax %",
+        "lineTotal": "Line Total",
+        "sortOrder": "Order",
+        "customerOrder": "Order"
+    },
+    "links": {
+        "customerOrder": "Order",
+        "product": "Product"
+    },
+    "labels": {
+        "Create CustomerOrderItem": "Add Line"
+    }
+}

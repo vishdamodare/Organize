@@ -1,0 +1,39 @@
+{
+    "fields": {
+        "number": "Number",
+        "account": "Customer",
+        "opportunity": "Deal",
+        "status": "Status",
+        "subtotal": "Subtotal",
+        "discountAmount": "Discount",
+        "taxAmount": "Tax",
+        "grandTotal": "Grand Total",
+        "description": "Notes",
+        "items": "Line Items",
+        "name": "Title",
+        "enquiry": "Enquiry",
+        "dateIssued": "Issue Date",
+        "validUntil": "Valid Until",
+        "terms": "Terms & Conditions",
+        "orders": "Orders"
+    },
+    "links": {
+        "account": "Customer",
+        "enquiry": "Enquiry",
+        "opportunity": "Deal",
+        "orders": "Orders",
+        "items": "Line Items",
+        "tasks": "Tasks"
+    },
+    "tooltips": {
+        "name": "Optional. Defaults to “Quotation for <customer>”."
+    },
+    "labels": {
+        "Create Quotation": "New Quotation",
+        "Convert to Order": "Convert to Order"
+    },
+    "presetFilters": {
+        "open": "Open (Draft/Sent)",
+        "accepted": "Accepted"
+    }
+}

@@ -1,0 +1,31 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "quantity",
+        "width": 10,
+        "align": "right"
+    },
+    {
+        "name": "unitPrice",
+        "width": 15,
+        "align": "right"
+    },
+    {
+        "name": "discountPercent",
+        "width": 10,
+        "align": "right"
+    },
+    {
+        "name": "taxPercent",
+        "width": 9,
+        "align": "right"
+    },
+    {
+        "name": "lineTotal",
+        "width": 16,
+        "align": "right"
+    }
+]

@@ -1,0 +1,3 @@
+{
+    "defaultsPopulatorClassName": "Espo\\Modules\\Jewellery\\Classes\\Record\\DefaultsPopulator"
+}

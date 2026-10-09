@@ -1,0 +1,6 @@
+{
+    "primaryFilterClassNameMap": {
+        "active": "Espo\\Modules\\Jewellery\\Classes\\Select\\CustomerOrder\\PrimaryFilters\\Active",
+        "delivered": "Espo\\Modules\\Jewellery\\Classes\\Select\\CustomerOrder\\PrimaryFilters\\Delivered"
+    }
+}

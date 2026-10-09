@@ -1,0 +1,30 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "taskType",
+        "width": 14
+    },
+    {
+        "name": "parent",
+        "width": 17
+    },
+    {
+        "name": "status",
+        "width": 11
+    },
+    {
+        "name": "priority",
+        "width": 9
+    },
+    {
+        "name": "dateEnd",
+        "width": 14
+    },
+    {
+        "name": "assignedUser",
+        "width": 12
+    }
+]

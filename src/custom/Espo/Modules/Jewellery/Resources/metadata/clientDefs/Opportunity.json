@@ -1,0 +1,14 @@
+{
+    "listDefaultViewMode": "kanban",
+    "relationshipPanels": {
+        "quotations": {
+            "create": true,
+            "select": false,
+            "layout": "listSmall"
+        },
+        "customerOrders": {
+            "create": false,
+            "select": false
+        }
+    }
+}

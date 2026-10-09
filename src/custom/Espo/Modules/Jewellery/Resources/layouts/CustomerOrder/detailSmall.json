@@ -1,0 +1,23 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "orderDate"
+                },
+                {
+                    "name": "expectedDeliveryDate"
+                }
+            ]
+        ]
+    }
+]

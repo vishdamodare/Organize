@@ -1,0 +1,34 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "stage"
+                }
+            ],
+            [
+                {
+                    "name": "amount"
+                },
+                {
+                    "name": "closeDate"
+                }
+            ],
+            [
+                {
+                    "name": "lostReason"
+                },
+                false
+            ]
+        ]
+    }
+]

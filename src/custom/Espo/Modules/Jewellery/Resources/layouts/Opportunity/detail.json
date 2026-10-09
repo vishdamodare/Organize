@@ -1,0 +1,58 @@
+[
+    {
+        "label": "Deal",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "account"
+                }
+            ],
+            [
+                {
+                    "name": "stage"
+                },
+                {
+                    "name": "amount"
+                }
+            ],
+            [
+                {
+                    "name": "probability"
+                },
+                {
+                    "name": "closeDate"
+                }
+            ],
+            [
+                {
+                    "name": "lostReason"
+                },
+                {
+                    "name": "outcomeDate"
+                }
+            ],
+            [
+                {
+                    "name": "enquiry"
+                },
+                {
+                    "name": "leadSource"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Notes",
+        "rows": [
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

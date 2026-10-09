@@ -1,0 +1,86 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 150,
+            "pattern": "$noBadCharacters"
+        },
+        "sku": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 50,
+            "pattern": "^[A-Za-z0-9._-]+$",
+            "audited": true
+        },
+        "category": {
+            "type": "enum",
+            "required": true,
+            "options": ["Gold Jewellery", "Diamond Jewellery", "Silver Jewellery", "Gemstones", "Bridal Jewellery", "Custom Design", "Other"],
+            "default": "Gold Jewellery"
+        },
+        "metalType": {
+            "type": "enum",
+            "options": ["", "Gold", "White Gold", "Rose Gold", "Silver", "Platinum", "Other"],
+            "default": ""
+        },
+        "purity": {
+            "type": "enum",
+            "options": ["", "24K", "22K", "18K", "14K", "925 Sterling", "950 Platinum", "Other"],
+            "default": ""
+        },
+        "designNumber": {
+            "type": "varchar",
+            "maxLength": 50
+        },
+        "gemstoneDetails": {
+            "type": "text",
+            "rows": 3
+        },
+        "description": {
+            "type": "text"
+        },
+        "image": {
+            "type": "image",
+            "previewSize": "medium"
+        },
+        "price": {
+            "type": "currency",
+            "min": 0,
+            "decimal": true,
+            "onlyDefaultCurrency": true,
+            "tooltip": true,
+            "audited": true
+        },
+        "unit": {
+            "type": "enum",
+            "options": ["Piece", "Pair", "Set", "Gram", "Carat"],
+            "default": "Piece"
+        },
+        "status": {
+            "type": "enum",
+            "options": ["Active", "Inactive"],
+            "default": "Active",
+            "style": {"Inactive": "info"},
+            "displayAsLabel": true
+        },
+        "createdAt": {"type": "datetime", "readOnly": true},
+        "modifiedAt": {"type": "datetime", "readOnly": true},
+        "createdBy": {"type": "link", "readOnly": true},
+        "modifiedBy": {"type": "link", "readOnly": true}
+    },
+    "links": {
+        "createdBy": {"type": "belongsTo", "entity": "User"},
+        "modifiedBy": {"type": "belongsTo", "entity": "User"},
+        "image": {"type": "belongsTo", "entity": "Attachment", "skipOrmDefs": true}
+    },
+    "collection": {
+        "orderBy": "name",
+        "order": "asc",
+        "textFilterFields": ["name", "sku", "designNumber"]
+    },
+    "indexes": {
+        "sku": {"type": "unique", "columns": ["sku", "deleteId"]}
+    },
+    "deleteId": true
+}

@@ -1,0 +1,42 @@
+{
+    "_tabBreak_0": {
+        "index": 0,
+        "tabBreak": true,
+        "tabLabel": "Timeline"
+    },
+    "stream": {
+        "sticked": false,
+        "index": 1
+    },
+    "_tabBreak_1": {
+        "index": 2,
+        "tabBreak": true,
+        "tabLabel": "Enquiries & Deals"
+    },
+    "enquiries": {
+        "index": 3
+    },
+    "opportunities": {
+        "index": 4
+    },
+    "_tabBreak_2": {
+        "index": 5,
+        "tabBreak": true,
+        "tabLabel": "Quotations & Orders"
+    },
+    "quotations": {
+        "index": 6
+    },
+    "customerOrders": {
+        "index": 7
+    },
+    "contacts": {
+        "disabled": true
+    },
+    "documents": {
+        "disabled": true
+    },
+    "cases": {
+        "disabled": true
+    }
+}

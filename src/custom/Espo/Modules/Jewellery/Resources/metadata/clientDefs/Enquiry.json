@@ -1,0 +1,71 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "fas fa-gem",
+    "color": "#C6963B",
+    "filterList": [
+        {
+            "name": "open"
+        },
+        {
+            "name": "new"
+        },
+        {
+            "name": "followUpDue",
+            "style": "warning"
+        }
+    ],
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "detailActionList": [
+        {
+            "name": "convertToDeal",
+            "label": "Convert to Deal",
+            "handler": "jewellery:handlers/convert-actions",
+            "actionFunction": "convertEnquiry",
+            "checkVisibilityFunction": "isEnquiryConvertible",
+            "iconClass": "fas fa-arrow-right"
+        }
+    ],
+    "sidePanels": {
+        "detail": [
+            {
+                "name": "activities",
+                "reference": "activities"
+            },
+            {
+                "name": "history",
+                "reference": "history"
+            },
+            {
+                "name": "tasks",
+                "reference": "tasks"
+            }
+        ],
+        "detailSmall": [
+            {
+                "name": "activities",
+                "reference": "activities"
+            },
+            {
+                "name": "history",
+                "reference": "history"
+            },
+            {
+                "name": "tasks",
+                "reference": "tasks"
+            }
+        ]
+    },
+    "relationshipPanels": {
+        "opportunities": {
+            "create": false,
+            "select": false
+        },
+        "quotations": {
+            "create": true,
+            "select": false,
+            "layout": "listSmall"
+        }
+    }
+}

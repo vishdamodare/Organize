@@ -1,0 +1,83 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 255,
+            "pattern": "$noBadCharacters"
+        },
+        "customerOrder": {
+            "type": "link",
+            "required": true,
+            "readOnlyAfterCreate": true
+        },
+        "product": {
+            "type": "link",
+            "view": "jewellery:views/item/fields/product"
+        },
+        "quantity": {
+            "type": "decimal",
+            "required": true,
+            "min": 0.001,
+            "default": "1",
+            "scale": 3,
+            "precision": 13
+        },
+        "unitPrice": {
+            "type": "currency",
+            "required": true,
+            "min": 0,
+            "decimal": true,
+            "onlyDefaultCurrency": true
+        },
+        "discountPercent": {
+            "type": "decimal",
+            "min": 0,
+            "max": 100,
+            "default": "0",
+            "scale": 2,
+            "precision": 5
+        },
+        "taxPercent": {
+            "type": "decimal",
+            "min": 0,
+            "max": 100,
+            "scale": 2,
+            "precision": 5
+        },
+        "lineTotal": {
+            "type": "currency",
+            "decimal": true,
+            "onlyDefaultCurrency": true,
+            "readOnly": true
+        },
+        "sortOrder": {
+            "type": "int",
+            "default": 0,
+            "layoutDetailDisabled": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "customerOrder": {
+            "type": "belongsTo",
+            "entity": "CustomerOrder",
+            "foreign": "items"
+        },
+        "product": {
+            "type": "belongsTo",
+            "entity": "JewelleryProduct"
+        }
+    },
+    "collection": {
+        "orderBy": "sortOrder",
+        "order": "asc"
+    }
+}

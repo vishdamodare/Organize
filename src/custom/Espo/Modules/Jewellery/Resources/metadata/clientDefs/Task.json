@@ -1,0 +1,21 @@
+{
+    "filterList": [
+        {
+            "name": "actual"
+        },
+        {
+            "name": "todays"
+        },
+        {
+            "name": "upcoming"
+        },
+        {
+            "name": "overdue",
+            "style": "danger"
+        },
+        {
+            "name": "completed",
+            "style": "success"
+        }
+    ]
+}

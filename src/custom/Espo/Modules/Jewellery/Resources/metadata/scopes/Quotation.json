@@ -1,0 +1,14 @@
+{
+    "entity": true,
+    "layouts": true,
+    "tab": true,
+    "acl": true,
+    "module": "Jewellery",
+    "customizable": true,
+    "importable": true,
+    "notifications": true,
+    "object": true,
+    "type": "BasePlus",
+    "stream": true,
+    "statusField": "status"
+}

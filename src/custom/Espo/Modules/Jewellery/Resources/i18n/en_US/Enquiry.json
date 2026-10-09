@@ -1,0 +1,51 @@
+{
+    "fields": {
+        "name": "Title",
+        "number": "Reference No.",
+        "account": "Customer",
+        "enquiryDate": "Enquiry Date",
+        "source": "Lead Source",
+        "category": "Jewellery Category",
+        "description": "Product / Design Description",
+        "metalType": "Metal",
+        "purity": "Purity",
+        "gemstoneType": "Gemstone",
+        "quantity": "Quantity",
+        "budget": "Approx. Budget",
+        "expectedPurchaseDate": "Expected Purchase Date",
+        "priority": "Priority",
+        "status": "Status",
+        "nextFollowUpDate": "Next Follow-up",
+        "attachments": "Attachments (photos, sketches)",
+        "opportunities": "Deals",
+        "quotations": "Quotations"
+    },
+    "links": {
+        "account": "Customer",
+        "opportunities": "Deals",
+        "quotations": "Quotations",
+        "tasks": "Tasks",
+        "calls": "Calls",
+        "meetings": "Meetings"
+    },
+    "options": {
+        "source": {
+            "": "—"
+        },
+        "metalType": {
+            "": "—"
+        },
+        "purity": {
+            "": "—"
+        }
+    },
+    "labels": {
+        "Create Enquiry": "New Enquiry",
+        "Convert to Deal": "Convert to Deal"
+    },
+    "presetFilters": {
+        "open": "Open",
+        "new": "New",
+        "followUpDue": "Follow-up Due"
+    }
+}

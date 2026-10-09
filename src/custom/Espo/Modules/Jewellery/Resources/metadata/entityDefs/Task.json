@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "taskType": {
+            "type": "enum",
+            "required": true,
+            "options": ["Customer Follow-up", "Phone Call", "Meeting", "Quotation Follow-up", "General Task"],
+            "default": "Customer Follow-up",
+            "audited": true
+        },
+        "parent": {
+            "entityList": ["Account", "Opportunity", "Enquiry", "Quotation", "CustomerOrder"]
+        },
+        "dateEnd": {
+            "required": true
+        }
+    },
+    "indexes": {
+        "taskType": {"columns": ["taskType", "deleted"]}
+    }
+}

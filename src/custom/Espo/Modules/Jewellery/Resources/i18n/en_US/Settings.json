@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "jewelleryCompanyName": "Company Name",
+        "jewelleryCompanyAddress": "Business Address",
+        "jewelleryCompanyPhone": "Phone",
+        "jewelleryCompanyEmail": "Email",
+        "jewelleryCompanyGstin": "GSTIN",
+        "jewelleryDefaultTaxPercent": "Default Tax % on Quotation Lines",
+        "jewelleryQuotationTerms": "Default Quotation Terms"
+    },
+    "tooltips": {
+        "jewelleryCompanyName": "Printed on quotations and orders.",
+        "jewelleryDefaultTaxPercent": "Pre-filled on new quotation lines; can be changed per line. Check the rate that applies to your business.",
+        "jewelleryQuotationTerms": "Copied into each new quotation; editable per quotation."
+    },
+    "labels": {
+        "Company Profile": "Company Profile",
+        "Quotations": "Quotations"
+    }
+}

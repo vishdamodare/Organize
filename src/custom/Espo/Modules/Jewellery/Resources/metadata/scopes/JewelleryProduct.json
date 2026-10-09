@@ -1,0 +1,12 @@
+{
+    "entity": true,
+    "layouts": true,
+    "tab": true,
+    "acl": true,
+    "module": "Jewellery",
+    "customizable": true,
+    "importable": true,
+    "object": true,
+    "type": "Base",
+    "stream": false
+}

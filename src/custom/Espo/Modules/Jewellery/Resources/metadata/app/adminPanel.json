@@ -1,0 +1,15 @@
+{
+    "jewellery": {
+        "label": "Jewellery CRM",
+        "itemList": [
+            {
+                "url": "#Admin/jewellerySettings",
+                "label": "Business Settings",
+                "iconClass": "fas fa-gem",
+                "description": "jewellerySettings",
+                "recordView": "jewellery:views/admin/business-settings"
+            }
+        ],
+        "order": 1
+    }
+}

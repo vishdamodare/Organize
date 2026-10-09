@@ -1,0 +1,22 @@
+[
+    {
+        "route": "/Enquiry/:id/convertToDeal",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\Jewellery\\Api\\PostConvertEnquiry"
+    },
+    {
+        "route": "/Quotation/:id/convertToOrder",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\Jewellery\\Api\\PostConvertQuotation"
+    },
+    {
+        "route": "/JewelleryReport/overview",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\Jewellery\\Api\\GetOverview"
+    },
+    {
+        "route": "/JewelleryReport/summary",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\Jewellery\\Api\\GetReportSummary"
+    }
+]

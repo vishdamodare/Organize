@@ -1,0 +1,27 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "account",
+        "width": 18
+    },
+    {
+        "name": "stage",
+        "width": 13
+    },
+    {
+        "name": "amount",
+        "width": 13,
+        "align": "right"
+    },
+    {
+        "name": "closeDate",
+        "width": 12
+    },
+    {
+        "name": "assignedUser",
+        "width": 13
+    }
+]

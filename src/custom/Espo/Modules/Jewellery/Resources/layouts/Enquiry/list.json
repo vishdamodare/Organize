@@ -1,0 +1,35 @@
+[
+    {
+        "name": "number",
+        "width": 10
+    },
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "account",
+        "width": 16
+    },
+    {
+        "name": "category",
+        "width": 13
+    },
+    {
+        "name": "budget",
+        "width": 11,
+        "align": "right"
+    },
+    {
+        "name": "status",
+        "width": 10
+    },
+    {
+        "name": "nextFollowUpDate",
+        "width": 11
+    },
+    {
+        "name": "assignedUser",
+        "width": 11
+    }
+]

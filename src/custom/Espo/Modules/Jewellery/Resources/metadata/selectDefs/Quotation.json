@@ -1,0 +1,6 @@
+{
+    "primaryFilterClassNameMap": {
+        "open": "Espo\\Modules\\Jewellery\\Classes\\Select\\Quotation\\PrimaryFilters\\Open",
+        "accepted": "Espo\\Modules\\Jewellery\\Classes\\Select\\Quotation\\PrimaryFilters\\Accepted"
+    }
+}

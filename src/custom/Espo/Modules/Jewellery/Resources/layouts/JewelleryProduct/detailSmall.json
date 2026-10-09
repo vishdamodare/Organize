@@ -1,0 +1,39 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "sku"
+                }
+            ],
+            [
+                {
+                    "name": "category"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "metalType"
+                },
+                {
+                    "name": "purity"
+                }
+            ],
+            [
+                {
+                    "name": "price"
+                },
+                {
+                    "name": "unit"
+                }
+            ]
+        ]
+    }
+]

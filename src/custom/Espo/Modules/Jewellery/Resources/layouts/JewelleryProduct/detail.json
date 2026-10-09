@@ -1,0 +1,64 @@
+[
+    {
+        "label": "Product",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "sku"
+                }
+            ],
+            [
+                {
+                    "name": "category"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "metalType"
+                },
+                {
+                    "name": "purity"
+                }
+            ],
+            [
+                {
+                    "name": "designNumber"
+                },
+                {
+                    "name": "unit"
+                }
+            ],
+            [
+                {
+                    "name": "price"
+                },
+                false
+            ]
+        ]
+    },
+    {
+        "label": "Details",
+        "rows": [
+            [
+                {
+                    "name": "gemstoneDetails"
+                },
+                {
+                    "name": "image"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

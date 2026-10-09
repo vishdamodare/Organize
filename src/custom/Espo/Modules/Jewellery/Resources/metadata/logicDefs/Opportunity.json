@@ -1,0 +1,24 @@
+{
+    "fields": {
+        "lostReason": {
+            "visible": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "stage",
+                        "value": "Closed Lost"
+                    }
+                ]
+            },
+            "required": {
+                "conditionGroup": [
+                    {
+                        "type": "equals",
+                        "attribute": "stage",
+                        "value": "Closed Lost"
+                    }
+                ]
+            }
+        }
+    }
+}

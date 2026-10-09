@@ -1,0 +1,5 @@
+{
+    "primaryFilterClassNameMap": {
+        "active": "Espo\\Modules\\Jewellery\\Classes\\Select\\JewelleryProduct\\PrimaryFilters\\Active"
+    }
+}

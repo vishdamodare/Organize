@@ -1,0 +1,37 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "taskType"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "priority"
+                }
+            ],
+            [
+                {
+                    "name": "dateEnd"
+                },
+                {
+                    "name": "parent"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

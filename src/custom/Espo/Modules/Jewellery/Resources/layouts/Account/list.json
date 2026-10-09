@@ -1,0 +1,34 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "width": 22
+    },
+    {
+        "name": "type",
+        "width": 14
+    },
+    {
+        "name": "contactPerson"
+    },
+    {
+        "name": "phoneNumber",
+        "width": 13
+    },
+    {
+        "name": "billingAddressCity",
+        "width": 11
+    },
+    {
+        "name": "customerStatus",
+        "width": 10
+    },
+    {
+        "name": "nextFollowUpAt",
+        "width": 12
+    },
+    {
+        "name": "assignedUser",
+        "width": 12
+    }
+]

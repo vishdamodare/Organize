@@ -1,0 +1,13 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "sku"
+    },
+    {
+        "name": "price",
+        "align": "right"
+    }
+]

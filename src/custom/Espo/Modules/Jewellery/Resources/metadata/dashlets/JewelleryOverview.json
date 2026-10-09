@@ -1,0 +1,23 @@
+{
+    "view": "jewellery:views/dashlets/overview",
+    "options": {
+        "fields": {
+            "title": {
+                "type": "varchar",
+                "required": true
+            }
+        },
+        "defaults": [],
+        "layout": [
+            {
+                "rows": [
+                    [
+                        {
+                            "name": "title"
+                        }
+                    ]
+                ]
+            }
+        ]
+    }
+}

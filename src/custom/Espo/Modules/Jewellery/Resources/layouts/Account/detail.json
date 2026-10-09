@@ -1,0 +1,64 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "type"
+                }
+            ],
+            [
+                {
+                    "name": "contactPerson"
+                },
+                {
+                    "name": "customerStatus"
+                }
+            ],
+            [
+                {
+                    "name": "phoneNumber"
+                },
+                {
+                    "name": "emailAddress"
+                }
+            ],
+            [
+                {
+                    "name": "preferredContactMethod"
+                },
+                {
+                    "name": "customerSource"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Address & Business",
+        "rows": [
+            [
+                {
+                    "name": "billingAddress"
+                },
+                {
+                    "name": "gstin"
+                }
+            ],
+            [
+                {
+                    "name": "tags"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

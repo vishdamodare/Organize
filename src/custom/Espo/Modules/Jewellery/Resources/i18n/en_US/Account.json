@@ -1,0 +1,45 @@
+{
+    "fields": {
+        "name": "Customer / Business Name",
+        "type": "Business Type",
+        "contactPerson": "Contact Person",
+        "phoneNumber": "Phone",
+        "emailAddress": "Email",
+        "billingAddress": "Address",
+        "billingAddressCity": "City",
+        "billingAddressState": "State",
+        "customerSource": "Customer Source",
+        "tags": "Tags",
+        "preferredContactMethod": "Preferred Contact",
+        "customerStatus": "Status",
+        "gstin": "GSTIN",
+        "lastInteractionAt": "Last Interaction",
+        "nextFollowUpAt": "Next Follow-up",
+        "description": "Notes",
+        "enquiries": "Enquiries",
+        "quotations": "Quotations",
+        "customerOrders": "Orders"
+    },
+    "links": {
+        "enquiries": "Enquiries",
+        "quotations": "Quotations",
+        "customerOrders": "Orders",
+        "opportunities": "Deals"
+    },
+    "options": {
+        "customerSource": {
+            "": "—"
+        },
+        "preferredContactMethod": {
+            "": "—"
+        }
+    },
+    "tooltips": {
+        "gstin": "Optional 15-character GST Identification Number, e.g. 27AAPFU0939F1ZV.",
+        "lastInteractionAt": "Updated automatically from completed tasks and held calls/meetings.",
+        "nextFollowUpAt": "Earliest due date among this customer’s open tasks."
+    },
+    "labels": {
+        "Create Account": "New Customer"
+    }
+}

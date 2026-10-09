@@ -1,0 +1,13 @@
+[
+    "status",
+    "category",
+    "source",
+    "priority",
+    "metalType",
+    "purity",
+    "account",
+    "assignedUser",
+    "enquiryDate",
+    "nextFollowUpDate",
+    "createdAt"
+]

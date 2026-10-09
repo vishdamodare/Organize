@@ -1,0 +1,12 @@
+{
+    "opportunities": {
+        "index": 0
+    },
+    "quotations": {
+        "index": 1
+    },
+    "stream": {
+        "sticked": false,
+        "index": 2
+    }
+}

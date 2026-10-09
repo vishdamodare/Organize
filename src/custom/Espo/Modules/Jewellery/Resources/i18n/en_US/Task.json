@@ -1,0 +1,19 @@
+{
+    "fields": {
+        "taskType": "Type",
+        "dateEnd": "Due",
+        "dateCompleted": "Completed At",
+        "parent": "Related To",
+        "account": "Customer"
+    },
+    "labels": {
+        "Create Task": "New Follow-up"
+    },
+    "presetFilters": {
+        "upcoming": "Upcoming",
+        "todays": "Due Today",
+        "overdue": "Overdue",
+        "completed": "Completed",
+        "actual": "Open"
+    }
+}

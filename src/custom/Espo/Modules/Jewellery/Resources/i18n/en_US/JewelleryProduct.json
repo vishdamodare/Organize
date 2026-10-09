@@ -1,0 +1,33 @@
+{
+    "fields": {
+        "name": "Product Name",
+        "sku": "SKU / Reference",
+        "category": "Jewellery Category",
+        "metalType": "Metal",
+        "purity": "Purity",
+        "designNumber": "Design / Model No.",
+        "gemstoneDetails": "Gemstone Details",
+        "description": "Description",
+        "image": "Image",
+        "price": "Indicative Price",
+        "unit": "Unit",
+        "status": "Status"
+    },
+    "options": {
+        "metalType": {
+            "": "—"
+        },
+        "purity": {
+            "": "—"
+        }
+    },
+    "tooltips": {
+        "price": "Reference price for the catalogue only. Final prices are set on each quotation. The CRM does not track live metal rates or stock."
+    },
+    "labels": {
+        "Create JewelleryProduct": "New Product"
+    },
+    "presetFilters": {
+        "active": "Active"
+    }
+}

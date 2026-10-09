@@ -1,0 +1,36 @@
+[
+    {
+        "name": "image",
+        "width": 7,
+        "notSortable": true
+    },
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "sku",
+        "width": 12
+    },
+    {
+        "name": "category",
+        "width": 15
+    },
+    {
+        "name": "metalType",
+        "width": 10
+    },
+    {
+        "name": "purity",
+        "width": 9
+    },
+    {
+        "name": "price",
+        "width": 12,
+        "align": "right"
+    },
+    {
+        "name": "status",
+        "width": 9
+    }
+]

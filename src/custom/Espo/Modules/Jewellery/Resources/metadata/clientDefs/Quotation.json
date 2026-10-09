@@ -1,0 +1,47 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "fas fa-file-invoice",
+    "color": "#6FA8D6",
+    "filterList": [
+        {
+            "name": "open"
+        },
+        {
+            "name": "accepted",
+            "style": "success"
+        }
+    ],
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "detailActionList": [
+        {
+            "name": "convertToOrder",
+            "label": "Convert to Order",
+            "handler": "jewellery:handlers/convert-actions",
+            "actionFunction": "convertQuotation",
+            "checkVisibilityFunction": "isQuotationConvertible",
+            "iconClass": "fas fa-arrow-right"
+        }
+    ],
+    "sidePanels": {
+        "detail": [
+            {
+                "name": "tasks",
+                "reference": "tasks"
+            }
+        ]
+    },
+    "relationshipPanels": {
+        "items": {
+            "rowActionsView": "views/record/row-actions/relationship-no-unlink",
+            "create": true,
+            "select": false,
+            "layout": "listSmall"
+        },
+        "orders": {
+            "create": false,
+            "select": false
+        }
+    }
+}

@@ -1,0 +1,8 @@
+[
+    "status",
+    "account",
+    "orderDate",
+    "expectedDeliveryDate",
+    "grandTotal",
+    "assignedUser"
+]

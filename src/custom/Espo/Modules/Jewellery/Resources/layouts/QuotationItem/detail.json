@@ -1,0 +1,41 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "product"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "name",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "quantity"
+                },
+                {
+                    "name": "unitPrice"
+                }
+            ],
+            [
+                {
+                    "name": "discountPercent"
+                },
+                {
+                    "name": "taxPercent"
+                }
+            ],
+            [
+                {
+                    "name": "lineTotal"
+                },
+                false
+            ]
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "items": {
+        "index": 0,
+        "sticked": true
+    },
+    "orders": {
+        "index": 1
+    },
+    "stream": {
+        "sticked": false,
+        "index": 2
+    }
+}

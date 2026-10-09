@@ -1,0 +1,7 @@
+{
+    "duplicateCheckFieldList": [
+        "name",
+        "emailAddress",
+        "phoneNumber"
+    ]
+}

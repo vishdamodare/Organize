@@ -1,0 +1,12 @@
+[
+    "type",
+    "customerStatus",
+    "customerSource",
+    "tags",
+    "billingAddressCity",
+    "billingAddressState",
+    "assignedUser",
+    "createdAt",
+    "lastInteractionAt",
+    "nextFollowUpAt"
+]

@@ -1,0 +1,33 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "fas fa-box",
+    "color": "#2E7D5B",
+    "filterList": [
+        {
+            "name": "active"
+        },
+        {
+            "name": "delivered",
+            "style": "success"
+        }
+    ],
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "sidePanels": {
+        "detail": [
+            {
+                "name": "tasks",
+                "reference": "tasks"
+            }
+        ]
+    },
+    "relationshipPanels": {
+        "items": {
+            "rowActionsView": "views/record/row-actions/relationship-no-unlink",
+            "create": true,
+            "select": false,
+            "layout": "listSmall"
+        }
+    }
+}

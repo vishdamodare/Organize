@@ -1,0 +1,9 @@
+[
+    "status",
+    "account",
+    "dateIssued",
+    "validUntil",
+    "grandTotal",
+    "assignedUser",
+    "createdBy"
+]

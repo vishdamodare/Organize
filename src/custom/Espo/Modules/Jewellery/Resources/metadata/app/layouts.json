@@ -1,0 +1,62 @@
+{
+    "Account": {
+        "bottomPanelsDetail": {
+            "module": "Jewellery"
+        },
+        "defaultSidePanel": {
+            "module": "Jewellery"
+        },
+        "detail": {
+            "module": "Jewellery"
+        },
+        "detailSmall": {
+            "module": "Jewellery"
+        },
+        "filters": {
+            "module": "Jewellery"
+        },
+        "list": {
+            "module": "Jewellery"
+        },
+        "listSmall": {
+            "module": "Jewellery"
+        },
+        "massUpdate": {
+            "module": "Jewellery"
+        }
+    },
+    "Opportunity": {
+        "bottomPanelsDetail": {
+            "module": "Jewellery"
+        },
+        "detail": {
+            "module": "Jewellery"
+        },
+        "detailSmall": {
+            "module": "Jewellery"
+        },
+        "filters": {
+            "module": "Jewellery"
+        },
+        "kanban": {
+            "module": "Jewellery"
+        },
+        "list": {
+            "module": "Jewellery"
+        }
+    },
+    "Task": {
+        "detail": {
+            "module": "Jewellery"
+        },
+        "detailSmall": {
+            "module": "Jewellery"
+        },
+        "filters": {
+            "module": "Jewellery"
+        },
+        "list": {
+            "module": "Jewellery"
+        }
+    }
+}

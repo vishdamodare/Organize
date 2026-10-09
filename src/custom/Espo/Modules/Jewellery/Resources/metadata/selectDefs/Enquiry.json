@@ -1,0 +1,7 @@
+{
+    "primaryFilterClassNameMap": {
+        "open": "Espo\\Modules\\Jewellery\\Classes\\Select\\Enquiry\\PrimaryFilters\\Open",
+        "new": "Espo\\Modules\\Jewellery\\Classes\\Select\\Enquiry\\PrimaryFilters\\NewEnquiries",
+        "followUpDue": "Espo\\Modules\\Jewellery\\Classes\\Select\\Enquiry\\PrimaryFilters\\FollowUpDue"
+    }
+}

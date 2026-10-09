@@ -1,0 +1,46 @@
+[
+    {
+        "label": "Company Profile",
+        "rows": [
+            [
+                {
+                    "name": "jewelleryCompanyName"
+                },
+                {
+                    "name": "jewelleryCompanyGstin"
+                }
+            ],
+            [
+                {
+                    "name": "jewelleryCompanyPhone"
+                },
+                {
+                    "name": "jewelleryCompanyEmail"
+                }
+            ],
+            [
+                {
+                    "name": "jewelleryCompanyAddress",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Quotations",
+        "rows": [
+            [
+                {
+                    "name": "jewelleryDefaultTaxPercent"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "jewelleryQuotationTerms",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

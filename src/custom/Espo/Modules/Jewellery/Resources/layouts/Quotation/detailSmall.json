@@ -1,0 +1,31 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "dateIssued"
+                },
+                {
+                    "name": "validUntil"
+                }
+            ],
+            [
+                {
+                    "name": "enquiry"
+                },
+                {
+                    "name": "opportunity"
+                }
+            ]
+        ]
+    }
+]

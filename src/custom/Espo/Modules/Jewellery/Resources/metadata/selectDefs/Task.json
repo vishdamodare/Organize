@@ -1,0 +1,5 @@
+{
+    "primaryFilterClassNameMap": {
+        "upcoming": "Espo\\Modules\\Jewellery\\Classes\\Select\\Task\\PrimaryFilters\\Upcoming"
+    }
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "category"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "priority"
+                }
+            ],
+            [
+                {
+                    "name": "budget"
+                },
+                {
+                    "name": "nextFollowUpDate"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

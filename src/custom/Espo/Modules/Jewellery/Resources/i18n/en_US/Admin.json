@@ -1,0 +1,9 @@
+{
+    "descriptions": {
+        "jewellerySettings": "Company name, address, GSTIN, default tax and quotation terms. Logo: Branding. Currency, time zone and date format: Settings / Currency. Quotation numbering: Entity Manager → Quotation → Number."
+    },
+    "labels": {
+        "Jewellery CRM": "Jewellery CRM",
+        "Business Settings": "Business Settings"
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "fields": {
+        "stage": {
+            "options": ["New", "Contacted", "Qualified", "Quotation Sent", "Negotiation", "Closed Won", "Closed Lost"],
+            "default": "New",
+            "probabilityMap": {
+                "New": 10,
+                "Contacted": 20,
+                "Qualified": 40,
+                "Quotation Sent": 60,
+                "Negotiation": 80,
+                "Closed Won": 100,
+                "Closed Lost": 0
+            },
+            "style": {
+                "Qualified": "primary",
+                "Quotation Sent": "primary",
+                "Negotiation": "warning",
+                "Closed Won": "success",
+                "Closed Lost": "info"
+            }
+        },
+        "lastStage": {
+            "options": ["New", "Contacted", "Qualified", "Quotation Sent", "Negotiation", "Closed Won", "Closed Lost"]
+        },
+        "enquiry": {
+            "type": "link",
+            "readOnly": true
+        },
+        "lostReason": {
+            "type": "enum",
+            "options": ["", "Price too high", "Chose competitor", "Design not available", "Delivery timeline", "Budget constraints", "No response", "Other"],
+            "default": "",
+            "audited": true
+        },
+        "outcomeDate": {
+            "type": "date",
+            "readOnly": true,
+            "tooltip": true
+        }
+    },
+    "links": {
+        "enquiry": {"type": "belongsTo", "entity": "Enquiry", "foreign": "opportunities"},
+        "quotations": {"type": "hasMany", "entity": "Quotation", "foreign": "opportunity"},
+        "customerOrders": {"type": "hasMany", "entity": "CustomerOrder", "foreign": "opportunity"}
+    }
+}

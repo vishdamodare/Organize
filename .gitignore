@@ -1,0 +1,7 @@
+.env
+build/
+instances/
+backups/
+*.log
+.DS_Store
+tests/ui/out/

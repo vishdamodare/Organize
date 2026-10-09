@@ -1,0 +1,49 @@
+{
+    "scopeNames": {
+        "Account": "Customer",
+        "Opportunity": "Deal",
+        "Task": "Task",
+        "Home": "Overview",
+        "Enquiry": "Enquiry",
+        "JewelleryProduct": "Product",
+        "Quotation": "Quotation",
+        "QuotationItem": "Quotation Line",
+        "CustomerOrder": "Order",
+        "CustomerOrderItem": "Order Line",
+        "JewelleryReport": "Reports",
+        "User": "Team Member"
+    },
+    "scopeNamesPlural": {
+        "Account": "Customers",
+        "Opportunity": "Sales Pipeline",
+        "Task": "Tasks & Follow-ups",
+        "Enquiry": "Enquiries",
+        "JewelleryProduct": "Products",
+        "Quotation": "Quotations",
+        "QuotationItem": "Quotation Lines",
+        "CustomerOrder": "Orders",
+        "CustomerOrderItem": "Order Lines",
+        "JewelleryReport": "Reports",
+        "User": "Team",
+        "Home": "Overview"
+    },
+    "dashlets": {
+        "JewelleryOverview": "Business Overview"
+    },
+    "links": {
+        "enquiries": "Enquiries",
+        "quotations": "Quotations",
+        "customerOrders": "Orders",
+        "orders": "Orders",
+        "items": "Line Items",
+        "enquiry": "Enquiry"
+    },
+    "labels": {
+        "Timeline": "Timeline",
+        "Enquiries & Deals": "Enquiries & Deals",
+        "Quotations & Orders": "Quotations & Orders",
+        "Jewellery CRM": "Jewellery CRM",
+        "Business Settings": "Business Settings",
+        "Home": "Overview"
+    }
+}

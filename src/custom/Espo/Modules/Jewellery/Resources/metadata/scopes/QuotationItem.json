@@ -1,0 +1,22 @@
+{
+    "entity": true,
+    "layouts": true,
+    "tab": false,
+    "acl": true,
+    "aclLevelList": [
+        "all",
+        "no"
+    ],
+    "aclActionList": [
+        "create",
+        "read",
+        "edit",
+        "delete"
+    ],
+    "module": "Jewellery",
+    "customizable": false,
+    "importable": false,
+    "object": true,
+    "type": "Base",
+    "disabled": false
+}

@@ -1,0 +1,83 @@
+<table style="width:100%;border-collapse:collapse;font-family:DejaVu Sans, sans-serif;font-size:9pt;color:#1b2333">
+<tr>
+  <td style="width:60%;vertical-align:top">
+    {{#if companyLogoId}}<img src="?entryPoint=attachment&id={{companyLogoId}}" style="max-height:60px;max-width:200px"><br>{{/if}}
+    <span style="font-size:14pt;font-weight:bold;color:#0F766E">{{companyName}}</span><br>
+    {{{companyAddressHtml}}}
+    {{#if companyPhone}}<br>Phone: {{companyPhone}}{{/if}}
+    {{#if companyEmail}}<br>Email: {{companyEmail}}{{/if}}
+    {{#if companyGstin}}<br>GSTIN: {{companyGstin}}{{/if}}
+  </td>
+  <td style="width:40%;vertical-align:top;text-align:right">
+    <span style="font-size:16pt;font-weight:bold;color:#C9973F;letter-spacing:1px">{{documentTitle}}</span><br>
+    <b>No.:</b> {{number}}<br>
+    {{#if dateIssued}}<b>Date:</b> {{dateIssued}}<br>{{/if}}
+    {{#if validUntil}}<b>Valid until:</b> {{validUntil}}<br>{{/if}}
+    {{#if orderDate}}<b>Order date:</b> {{orderDate}}<br>{{/if}}
+    {{#if expectedDeliveryDate}}<b>Expected delivery:</b> {{expectedDeliveryDate}}<br>{{/if}}
+  </td>
+</tr>
+</table>
+
+<div style="height:2px;background:#C9973F;margin:10px 0 12px"></div>
+
+<table style="width:100%;font-family:DejaVu Sans, sans-serif;font-size:9pt;color:#1b2333">
+<tr><td style="vertical-align:top">
+  <span style="color:#5b6475;font-size:8pt;text-transform:uppercase">Bill to</span><br>
+  <b>{{customerName}}</b>
+  {{#if customerContact}}<br>Attn: {{customerContact}}{{/if}}
+  {{#if customerAddress}}<br>{{customerAddress}}{{/if}}
+  {{#if customerPhone}}<br>Phone: {{customerPhone}}{{/if}}
+  {{#if customerEmail}}<br>Email: {{customerEmail}}{{/if}}
+  {{#if customerGstin}}<br>GSTIN: {{customerGstin}}{{/if}}
+</td></tr>
+</table>
+
+<table style="width:100%;border-collapse:collapse;margin-top:14px;font-family:DejaVu Sans, sans-serif;font-size:8.5pt">
+<thead>
+<tr style="background:#0F766E;color:#ffffff">
+  <th style="padding:6px;text-align:left;width:5%">#</th>
+  <th style="padding:6px;text-align:left">Item</th>
+  <th style="padding:6px;text-align:right;width:8%">Qty</th>
+  <th style="padding:6px;text-align:right;width:16%">Unit price</th>
+  <th style="padding:6px;text-align:right;width:9%">Disc.</th>
+  <th style="padding:6px;text-align:right;width:8%">Tax</th>
+  <th style="padding:6px;text-align:right;width:18%">Amount</th>
+</tr>
+</thead>
+<tbody>
+{{#each itemList}}
+<tr>
+  <td style="padding:6px;border-bottom:1px solid #e3e6ec">{{no}}</td>
+  <td style="padding:6px;border-bottom:1px solid #e3e6ec">{{name}}</td>
+  <td style="padding:6px;border-bottom:1px solid #e3e6ec;text-align:right">{{quantity}}</td>
+  <td style="padding:6px;border-bottom:1px solid #e3e6ec;text-align:right">{{unitPrice}}</td>
+  <td style="padding:6px;border-bottom:1px solid #e3e6ec;text-align:right">{{discountPercent}}</td>
+  <td style="padding:6px;border-bottom:1px solid #e3e6ec;text-align:right">{{taxPercent}}</td>
+  <td style="padding:6px;border-bottom:1px solid #e3e6ec;text-align:right">{{lineTotal}}</td>
+</tr>
+{{/each}}
+</tbody>
+</table>
+
+<table style="width:45%;margin-left:55%;margin-top:10px;border-collapse:collapse;font-family:DejaVu Sans, sans-serif;font-size:9pt">
+<tr><td style="padding:4px">Subtotal</td><td style="padding:4px;text-align:right">{{subtotalFormatted}}</td></tr>
+<tr><td style="padding:4px">Discount</td><td style="padding:4px;text-align:right">− {{discountFormatted}}</td></tr>
+<tr><td style="padding:4px">Tax</td><td style="padding:4px;text-align:right">{{taxFormatted}}</td></tr>
+<tr style="background:#E8F4F1"><td style="padding:6px;font-weight:bold">Total ({{currencyCode}})</td>
+  <td style="padding:6px;text-align:right;font-weight:bold;color:#0F766E">{{grandTotalFormatted}}</td></tr>
+</table>
+
+{{#if termsHtml}}
+<div style="margin-top:20px;font-family:DejaVu Sans, sans-serif;font-size:8pt;color:#333">
+  <b style="color:#0F766E">Terms &amp; conditions</b><br>{{{termsHtml}}}
+</div>
+{{/if}}
+{{#if notesHtml}}
+<div style="margin-top:10px;font-family:DejaVu Sans, sans-serif;font-size:8pt;color:#333">
+  <b style="color:#0F766E">Notes</b><br>{{{notesHtml}}}
+</div>
+{{/if}}
+<p style="margin-top:18px;font-family:DejaVu Sans, sans-serif;font-size:7pt;color:#777">
+  This document is a commercial quotation/order confirmation, not a tax invoice.
+</p>

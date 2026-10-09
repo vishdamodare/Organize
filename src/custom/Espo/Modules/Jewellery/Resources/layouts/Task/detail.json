@@ -1,0 +1,57 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "taskType"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "priority"
+                }
+            ],
+            [
+                {
+                    "name": "dateStart"
+                },
+                {
+                    "name": "dateEnd"
+                }
+            ],
+            [
+                {
+                    "name": "parent"
+                },
+                {
+                    "name": "account"
+                }
+            ],
+            [
+                {
+                    "name": "dateCompleted"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "attachments"
+                },
+                false
+            ]
+        ]
+    }
+]

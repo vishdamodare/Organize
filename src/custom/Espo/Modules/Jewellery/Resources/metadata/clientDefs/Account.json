@@ -1,0 +1,19 @@
+{
+    "relationshipPanels": {
+        "enquiries": {
+            "create": true,
+            "select": false,
+            "layout": "listSmall"
+        },
+        "quotations": {
+            "create": true,
+            "select": false,
+            "layout": "listSmall"
+        },
+        "customerOrders": {
+            "create": false,
+            "select": false,
+            "layout": "listSmall"
+        }
+    }
+}

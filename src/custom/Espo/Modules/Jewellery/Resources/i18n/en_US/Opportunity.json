@@ -1,0 +1,45 @@
+{
+    "fields": {
+        "name": "Deal Title",
+        "account": "Customer",
+        "amount": "Expected Value",
+        "closeDate": "Expected Closing Date",
+        "stage": "Stage",
+        "probability": "Probability, %",
+        "enquiry": "Enquiry",
+        "lostReason": "Lost Reason",
+        "outcomeDate": "Outcome Date",
+        "description": "Notes",
+        "quotations": "Quotations",
+        "customerOrders": "Orders"
+    },
+    "links": {
+        "enquiry": "Enquiry",
+        "quotations": "Quotations",
+        "customerOrders": "Orders"
+    },
+    "options": {
+        "stage": {
+            "New": "New",
+            "Contacted": "Contacted",
+            "Qualified": "Qualified",
+            "Quotation Sent": "Quotation Sent",
+            "Negotiation": "Negotiation",
+            "Closed Won": "Won",
+            "Closed Lost": "Lost"
+        },
+        "lastStage": {
+            "Closed Won": "Won",
+            "Closed Lost": "Lost"
+        },
+        "lostReason": {
+            "": "—"
+        }
+    },
+    "tooltips": {
+        "outcomeDate": "Set automatically when the deal is marked Won or Lost. A Won deal is not an order or a payment."
+    },
+    "labels": {
+        "Create Opportunity": "New Deal"
+    }
+}

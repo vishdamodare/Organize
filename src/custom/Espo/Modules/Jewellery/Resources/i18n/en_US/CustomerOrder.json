@@ -1,0 +1,32 @@
+{
+    "fields": {
+        "number": "Number",
+        "account": "Customer",
+        "opportunity": "Deal",
+        "status": "Status",
+        "subtotal": "Subtotal",
+        "discountAmount": "Discount",
+        "taxAmount": "Tax",
+        "grandTotal": "Grand Total",
+        "description": "Notes",
+        "items": "Line Items",
+        "name": "Title",
+        "quotation": "Quotation",
+        "orderDate": "Order Date",
+        "expectedDeliveryDate": "Expected Delivery"
+    },
+    "links": {
+        "account": "Customer",
+        "quotation": "Quotation",
+        "opportunity": "Deal",
+        "items": "Line Items",
+        "tasks": "Tasks"
+    },
+    "labels": {
+        "Create CustomerOrder": "New Order"
+    },
+    "presetFilters": {
+        "active": "Active",
+        "delivered": "Delivered"
+    }
+}

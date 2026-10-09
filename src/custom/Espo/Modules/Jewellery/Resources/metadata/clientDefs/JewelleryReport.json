@@ -1,0 +1,4 @@
+{
+    "controller": "jewellery:controllers/jewellery-report",
+    "iconClass": "fas fa-chart-bar"
+}

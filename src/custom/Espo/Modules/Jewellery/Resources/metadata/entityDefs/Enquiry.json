@@ -1,0 +1,119 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 150,
+            "pattern": "$noBadCharacters"
+        },
+        "number": {
+            "type": "number",
+            "prefix": "ENQ-",
+            "nextNumber": 1,
+            "padLength": 5,
+            "readOnly": true
+        },
+        "account": {
+            "type": "link",
+            "required": true,
+            "audited": true
+        },
+        "enquiryDate": {
+            "type": "date",
+            "required": true,
+            "default": "javascript: return this.dateTime.getToday();"
+        },
+        "source": {
+            "type": "enum",
+            "options": ["", "Walk-in", "Phone", "WhatsApp", "Referral", "Website", "Exhibition", "Social Media", "Existing Customer", "Other"],
+            "default": ""
+        },
+        "category": {
+            "type": "enum",
+            "required": true,
+            "options": ["Gold Jewellery", "Diamond Jewellery", "Silver Jewellery", "Gemstones", "Bridal Jewellery", "Custom Design", "Other"],
+            "default": "Gold Jewellery"
+        },
+        "description": {
+            "type": "text"
+        },
+        "metalType": {
+            "type": "enum",
+            "options": ["", "Gold", "White Gold", "Rose Gold", "Silver", "Platinum", "Other"],
+            "default": ""
+        },
+        "purity": {
+            "type": "enum",
+            "options": ["", "24K", "22K", "18K", "14K", "925 Sterling", "950 Platinum", "Other"],
+            "default": ""
+        },
+        "gemstoneType": {
+            "type": "varchar",
+            "maxLength": 100
+        },
+        "quantity": {
+            "type": "int",
+            "min": 1,
+            "default": 1
+        },
+        "budget": {
+            "type": "currency",
+            "min": 0,
+            "decimal": true,
+            "onlyDefaultCurrency": true
+        },
+        "expectedPurchaseDate": {
+            "type": "date"
+        },
+        "priority": {
+            "type": "enum",
+            "options": ["Low", "Normal", "High", "Urgent"],
+            "default": "Normal",
+            "style": {"High": "warning", "Urgent": "danger"},
+            "displayAsLabel": true
+        },
+        "status": {
+            "type": "enum",
+            "options": ["New", "Contacted", "In Progress", "Converted", "Lost"],
+            "default": "New",
+            "style": {"Contacted": "primary", "In Progress": "warning", "Converted": "success", "Lost": "info"},
+            "displayAsLabel": true,
+            "audited": true
+        },
+        "nextFollowUpDate": {
+            "type": "date",
+            "audited": true
+        },
+        "attachments": {
+            "type": "attachmentMultiple"
+        },
+        "createdAt": {"type": "datetime", "readOnly": true},
+        "modifiedAt": {"type": "datetime", "readOnly": true},
+        "createdBy": {"type": "link", "readOnly": true},
+        "modifiedBy": {"type": "link", "readOnly": true},
+        "assignedUser": {"type": "link", "view": "views/fields/assigned-user"},
+        "teams": {"type": "linkMultiple", "view": "views/fields/teams"}
+    },
+    "links": {
+        "createdBy": {"type": "belongsTo", "entity": "User"},
+        "modifiedBy": {"type": "belongsTo", "entity": "User"},
+        "assignedUser": {"type": "belongsTo", "entity": "User"},
+        "teams": {"type": "hasMany", "entity": "Team", "relationName": "entityTeam", "layoutRelationshipsDisabled": true},
+        "account": {"type": "belongsTo", "entity": "Account", "foreign": "enquiries"},
+        "opportunities": {"type": "hasMany", "entity": "Opportunity", "foreign": "enquiry"},
+        "quotations": {"type": "hasMany", "entity": "Quotation", "foreign": "enquiry"},
+        "tasks": {"type": "hasChildren", "entity": "Task", "foreign": "parent"},
+        "calls": {"type": "hasChildren", "entity": "Call", "foreign": "parent"},
+        "meetings": {"type": "hasChildren", "entity": "Meeting", "foreign": "parent"}
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": ["name", "number", "description"]
+    },
+    "indexes": {
+        "status": {"columns": ["status", "deleted"]},
+        "nextFollowUpDate": {"columns": ["nextFollowUpDate", "deleted"]},
+        "createdAt": {"columns": ["createdAt", "deleted"]}
+    }
+}

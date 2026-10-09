@@ -1,0 +1,10 @@
+[
+    "stage",
+    "account",
+    "amount",
+    "closeDate",
+    "outcomeDate",
+    "lostReason",
+    "assignedUser",
+    "createdAt"
+]

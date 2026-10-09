@@ -1,0 +1,31 @@
+[
+    {
+        "name": "number",
+        "link": true,
+        "width": 11
+    },
+    {
+        "name": "account"
+    },
+    {
+        "name": "orderDate",
+        "width": 11
+    },
+    {
+        "name": "expectedDeliveryDate",
+        "width": 12
+    },
+    {
+        "name": "grandTotal",
+        "width": 13,
+        "align": "right"
+    },
+    {
+        "name": "status",
+        "width": 13
+    },
+    {
+        "name": "assignedUser",
+        "width": 12
+    }
+]

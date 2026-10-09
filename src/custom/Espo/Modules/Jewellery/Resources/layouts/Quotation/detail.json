@@ -1,0 +1,77 @@
+[
+    {
+        "label": "Quotation",
+        "rows": [
+            [
+                {
+                    "name": "number"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "dateIssued"
+                },
+                {
+                    "name": "validUntil"
+                }
+            ],
+            [
+                {
+                    "name": "enquiry"
+                },
+                {
+                    "name": "opportunity"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Totals",
+        "rows": [
+            [
+                {
+                    "name": "subtotal"
+                },
+                {
+                    "name": "discountAmount"
+                }
+            ],
+            [
+                {
+                    "name": "taxAmount"
+                },
+                {
+                    "name": "grandTotal"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Notes & Terms",
+        "rows": [
+            [
+                {
+                    "name": "terms",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]
