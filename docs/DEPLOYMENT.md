@@ -47,6 +47,25 @@ server {
 
 File permissions: instance files owned by the PHP-FPM user; `data/`, `custom/`, `client/custom/` writable.
 
+## Hostinger shared hosting (one company per subdomain)
+
+1. hPanel → **Domains → Subdomains**: create `crm.yoursite.com`. Note its folder (e.g. `public_html/crm`).
+2. hPanel → **Websites → (the site) → Advanced → PHP Configuration**: PHP **8.3** or newer.
+3. hPanel → **Databases → Management**: create a database + user; note name, user, password.
+4. hPanel → **Advanced → SSH Access**: enable, then connect and run:
+   ```bash
+   git clone https://github.com/vishdamodare/Organize.git ~/organize
+   bash ~/organize/scripts/install-hostinger.sh
+   ```
+   It asks for the subdomain folder (full path, e.g. `/home/u123456789/domains/yoursite.com/public_html/crm`),
+   the URL (`https://crm.yoursite.com`), company name and DB details, then prints the owner login.
+5. hPanel → **Advanced → Cron Jobs**: add the every-minute command the script prints.
+6. hPanel → **Security → SSL**: confirm the subdomain has SSL (free, usually automatic).
+
+The root `.htaccess` shipped with EspoCRM routes requests into `public/` and blocks `data/`, `custom/`, `vendor/`.
+Module updates: `cd ~/organize && git pull`, copy `src/custom/...` and `src/client/custom/...` into the folder as in the
+script, then `php command.php rebuild` there.
+
 ## Database
 
 `create-company.sh` creates `goldcrm_<slug>` (utf8mb4) and a DB user `gc_<slug>` with privileges only on that database. `.env` holds the provisioning account; it is not used by the running app.
