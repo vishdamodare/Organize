@@ -86,7 +86,7 @@ a.jw-tile:hover, a.jw-tile:focus-visible { border-color: var(--og-primary); box-
 .jw-tile.jw-gold { border-top: 3px solid var(--og-gold); background: var(--og-gold-soft); }
 .jw-tile.jw-gold .jw-tile-value { color: var(--og-gold-text); }
 
-.jw-columns { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.jw-columns { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); }
 .jw-panel { background: #fff; border: 1px solid var(--og-border); border-radius: 10px; padding: 14px 16px; }
 .jw-panel h5 { font-weight: 600; margin: 0 0 10px; color: var(--og-ink); font-size: 14px; }
 .jw-bar-row { display: grid; grid-template-columns: 120px 1fr auto; gap: 10px; align-items: center;
@@ -108,7 +108,7 @@ a.jw-tile:hover, a.jw-tile:focus-visible { border-color: var(--og-primary); box-
 /* ---------- Reports page ---------- */
 .jw-report-toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 18px; }
 .jw-report-toolbar .jw-export { margin-left: auto; }
-.jw-report-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+.jw-report-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr)); }
 .jw-report td { position: relative; font-variant-numeric: tabular-nums; }
 .jw-inline-bar { position: absolute; left: 0; top: 5px; bottom: 5px; background: rgba(15, 118, 110, .10); border-radius: 4px; z-index: 0; }
 .jw-report td > *:not(.jw-inline-bar) { position: relative; }
@@ -139,7 +139,7 @@ a.jw-tile:hover, a.jw-tile:focus-visible { border-color: var(--og-primary); box-
 .label-info, .label-default { background: #EEF2F6 !important; color: #475467 !important; }
 
 /* List tables: card look, quiet header, row hover */
-.list-container .list { background: #fff; border: 1px solid var(--og-border); border-radius: 10px; box-shadow: var(--og-shadow); overflow: hidden; }
+.list-container .list { background: #fff; border: 1px solid var(--og-border); border-radius: 10px; box-shadow: var(--og-shadow); overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .list > table > thead > tr > th { background: #FAFBFC; color: var(--og-muted); font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
 .list > table > tbody > tr:hover > td { background: #F7FAF9; }
 .list > table > tbody > tr > td a.link { font-weight: 500; }
@@ -167,3 +167,50 @@ body:has(#login) { background: radial-gradient(1200px 600px at 20% -10%, var(--o
 .jw-welcome p { margin: 2px 0 0; color: var(--og-muted); }
 .jw-quick { display: flex; flex-wrap: wrap; gap: 8px; }
 .jw-quick .btn { border-radius: 8px; }
+
+/* ================= Responsive ================= */
+
+/* Tablet and below */
+@media (max-width: 991px) {
+    .jw-task-list li { flex-wrap: wrap; }
+    .jw-task-list li > a { white-space: normal; flex: 1 1 100%; }
+    .jw-task-list .jw-due { margin-left: 0; }
+    .jw-report .table-responsive { border: 0; }
+    .jw-inline-bar { display: none; }   /* bars get misleading in narrow cells */
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .jw-welcome { margin-bottom: 12px; }
+    .jw-welcome h3 { font-size: 19px; }
+    .jw-quick { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+    .jw-quick .btn { white-space: normal; text-align: left; padding: 8px 10px; }
+
+    /* period chips: one swipeable row instead of three wrapped rows */
+    .jw-period { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; }
+    .jw-period::-webkit-scrollbar { display: none; }
+    .jw-period .btn { flex: 0 0 auto; }
+    .jw-period .jw-custom { flex: 0 0 auto; }
+
+    .jw-tiles, .jw-report-kpis { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .jw-tile { padding: 11px 12px; }
+    .jw-tile-value { font-size: 20px; }
+    .jw-tile.jw-gold { grid-column: 1 / -1; }
+    .jw-panel { padding: 12px; }
+
+    .jw-report-toolbar { gap: 8px; }
+    .jw-report-toolbar .btn-group { display: flex; width: 100%; }
+    .jw-report-toolbar .btn-group .btn { flex: 1; }
+    .jw-report-toolbar .jw-custom { width: 100%; }
+    .jw-report-toolbar .jw-custom input[type=date] { flex: 1; min-width: 0; }
+    .jw-report-toolbar .jw-export { width: 100%; }
+    .jw-report .panel-body { padding: 10px; }
+    .jw-report table { font-size: 12.5px; }
+
+    /* list tables scroll sideways inside their card; keep the name column readable */
+    .list > table { min-width: 560px; }
+    .page-header h3 { font-size: 20px; }
+}
+
+/* Grid children may shrink below their content width (tables scroll inside instead) */
+.jw-report-grid > *, .jw-columns > *, .jw-tiles > *, .jw-report-kpis > * { min-width: 0; }
