@@ -3,7 +3,14 @@
         "type": {
             "type": "enum",
             "required": true,
-            "options": ["Retail Jewellery Shop", "Wholesaler", "Manufacturer", "Individual Buyer", "Supplier", "Other Business"],
+            "options": [
+                "Retail Jewellery Shop",
+                "Wholesaler",
+                "Manufacturer",
+                "Individual Buyer",
+                "Supplier",
+                "Other Business"
+            ],
             "default": "Individual Buyer",
             "audited": true
         },
@@ -14,25 +21,55 @@
         },
         "customerSource": {
             "type": "enum",
-            "options": ["", "Walk-in", "Phone", "WhatsApp", "Referral", "Website", "Exhibition", "Social Media", "Other"],
+            "options": [
+                "",
+                "Walk-in",
+                "Phone",
+                "WhatsApp",
+                "Referral",
+                "Website",
+                "Exhibition",
+                "Social Media",
+                "Other"
+            ],
             "default": ""
         },
         "tags": {
             "type": "multiEnum",
-            "options": ["VIP", "Bridal", "Repeat Buyer", "Bulk Buyer", "Corporate Gifting"],
+            "options": [
+                "VIP",
+                "Bridal",
+                "Repeat Buyer",
+                "Bulk Buyer",
+                "Corporate Gifting"
+            ],
             "allowCustomOptions": true,
             "displayAsLabel": true
         },
         "preferredContactMethod": {
             "type": "enum",
-            "options": ["", "Phone", "WhatsApp", "Email", "In Person"],
+            "options": [
+                "",
+                "Phone",
+                "WhatsApp",
+                "Email",
+                "In Person"
+            ],
             "default": ""
         },
         "customerStatus": {
             "type": "enum",
-            "options": ["Active", "Prospect", "Inactive"],
+            "options": [
+                "Active",
+                "Prospect",
+                "Inactive"
+            ],
             "default": "Active",
-            "style": {"Prospect": "primary", "Inactive": "info"},
+            "style": {
+                "Active": "success",
+                "Prospect": "primary",
+                "Inactive": "info"
+            },
             "displayAsLabel": true,
             "audited": true
         },
@@ -54,11 +91,28 @@
         }
     },
     "links": {
-        "enquiries": {"type": "hasMany", "entity": "Enquiry", "foreign": "account"},
-        "quotations": {"type": "hasMany", "entity": "Quotation", "foreign": "account"},
-        "customerOrders": {"type": "hasMany", "entity": "CustomerOrder", "foreign": "account"}
+        "enquiries": {
+            "type": "hasMany",
+            "entity": "Enquiry",
+            "foreign": "account"
+        },
+        "quotations": {
+            "type": "hasMany",
+            "entity": "Quotation",
+            "foreign": "account"
+        },
+        "customerOrders": {
+            "type": "hasMany",
+            "entity": "CustomerOrder",
+            "foreign": "account"
+        }
     },
     "indexes": {
-        "customerStatus": {"columns": ["customerStatus", "deleted"]}
+        "customerStatus": {
+            "columns": [
+                "customerStatus",
+                "deleted"
+            ]
+        }
     }
 }

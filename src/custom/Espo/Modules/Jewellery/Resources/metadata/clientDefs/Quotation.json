@@ -14,16 +14,6 @@
     "boolFilterList": [
         "onlyMy"
     ],
-    "detailActionList": [
-        {
-            "name": "convertToOrder",
-            "label": "Convert to Order",
-            "handler": "jewellery:handlers/convert-actions",
-            "actionFunction": "convertQuotation",
-            "checkVisibilityFunction": "isQuotationConvertible",
-            "iconClass": "fas fa-arrow-right"
-        }
-    ],
     "sidePanels": {
         "detail": [
             {
@@ -42,6 +32,21 @@
         "orders": {
             "create": false,
             "select": false
+        }
+    },
+    "menu": {
+        "detail": {
+            "buttons": [
+                {
+                    "name": "convertToOrder",
+                    "label": "Convert to Order",
+                    "style": "primary",
+                    "iconHtml": "<span class=\"fas fa-arrow-right fa-sm\"></span>",
+                    "handler": "jewellery:handlers/convert-actions",
+                    "actionFunction": "convertQuotation",
+                    "checkVisibilityFunction": "isQuotationConvertible"
+                }
+            ]
         }
     }
 }

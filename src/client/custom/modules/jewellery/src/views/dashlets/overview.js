@@ -10,6 +10,17 @@ define('jewellery:views/dashlets/overview', ['views/dashlets/abstract/base'], (D
 
         templateContent = `
             <div class="jw-overview">
+                <div class="jw-welcome">
+                    <div>
+                        <h3>{{greeting}}, {{firstName}}</h3>
+                        <p>Here's how {{companyName}} is doing.</p>
+                    </div>
+                    <div class="jw-quick">
+                        {{#each quickActions}}
+                            <a class="btn {{#if primary}}btn-primary{{else}}btn-default{{/if}} btn-sm" href="{{href}}"><span class="{{icon}}"></span> {{label}}</a>
+                        {{/each}}
+                    </div>
+                </div>
                 <div class="jw-period" role="group" aria-label="Period">
                     {{#each periods}}
                         <button type="button" class="btn btn-sm {{#if active}}btn-primary{{else}}btn-default{{/if}}"
@@ -214,7 +225,20 @@ define('jewellery:views/dashlets/overview', ['views/dashlets/abstract/base'], (D
                 due: t.dateEnd ? this.getDateTime().toDisplay(t.dateEnd) : '',
             }));
 
+            const hour = new Date().getHours();
+            const acl = this.getAcl();
+            const quickActions = [
+                {label: 'New Customer', href: '#Account/create', icon: 'fas fa-user-plus', scope: 'Account', primary: true},
+                {label: 'New Enquiry', href: '#Enquiry/create', icon: 'fas fa-gem', scope: 'Enquiry'},
+                {label: 'New Quotation', href: '#Quotation/create', icon: 'fas fa-file-invoice', scope: 'Quotation'},
+                {label: 'Schedule Follow-up', href: '#Task/create', icon: 'fas fa-calendar-check', scope: 'Task'},
+            ].filter(a => acl.check(a.scope, 'create'));
+
             return {
+                greeting: hour < 12 ? 'Good morning' : (hour < 17 ? 'Good afternoon' : 'Good evening'),
+                firstName: this.getUser().get('firstName') || this.getUser().get('name'),
+                companyName: this.getConfig().get('jewelleryCompanyName') || 'your business',
+                quickActions,
                 id: this.id,
                 periods,
                 isCustom: this.period === 'custom',

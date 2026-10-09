@@ -17,16 +17,6 @@
     "boolFilterList": [
         "onlyMy"
     ],
-    "detailActionList": [
-        {
-            "name": "convertToDeal",
-            "label": "Convert to Deal",
-            "handler": "jewellery:handlers/convert-actions",
-            "actionFunction": "convertEnquiry",
-            "checkVisibilityFunction": "isEnquiryConvertible",
-            "iconClass": "fas fa-arrow-right"
-        }
-    ],
     "sidePanels": {
         "detail": [
             {
@@ -66,6 +56,21 @@
             "create": true,
             "select": false,
             "layout": "listSmall"
+        }
+    },
+    "menu": {
+        "detail": {
+            "buttons": [
+                {
+                    "name": "convertToDeal",
+                    "label": "Convert to Deal",
+                    "style": "primary",
+                    "iconHtml": "<span class=\"fas fa-arrow-right fa-sm\"></span>",
+                    "handler": "jewellery:handlers/convert-actions",
+                    "actionFunction": "convertEnquiry",
+                    "checkVisibilityFunction": "isEnquiryConvertible"
+                }
+            ]
         }
     }
 }
