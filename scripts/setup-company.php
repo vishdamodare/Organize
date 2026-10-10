@@ -1,6 +1,6 @@
 <?php
 /**
- * Configure a freshly installed EspoCRM instance as a Organize company workspace.
+ * Configure a freshly installed EspoCRM instance as a Vyapaarsathi company workspace.
  * Idempotent: safe to re-run after module upgrades.
  *
  * Usage: php scripts/setup-company.php <instance-dir> "<Company Name>"
@@ -38,7 +38,7 @@ $settings = [
     'adminUpgradeDisabled' => true,
     'adminExtensionUpload' => false,
 
-    'applicationName' => 'Organize',
+    'applicationName' => 'Vyapaarsathi',
     'jewelleryCompanyName' => $config->get('jewelleryCompanyName') ?: $companyName,
     'jewelleryDefaultTaxPercent' => $config->get('jewelleryDefaultTaxPercent') ?? 3,
     'jewelleryQuotationTerms' => $config->get('jewelleryQuotationTerms') ?? implode("\n", [

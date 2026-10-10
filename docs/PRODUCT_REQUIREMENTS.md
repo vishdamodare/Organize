@@ -1,6 +1,6 @@
-# Product Requirements — Organize MVP
+# Product Requirements — Vyapaarsathi MVP
 
-Organize is a CRM for gem & jewellery businesses (retailers, wholesalers, manufacturers), built on EspoCRM.
+Vyapaarsathi is a CRM for gem & jewellery businesses (retailers, wholesalers, manufacturers), built on EspoCRM.
 
 Status legend: **Done** = implemented and covered by an automated test or a recorded check · **Done (manual)** = implemented and checked in the browser, no automated test · **Native** = provided by EspoCRM, configured not rebuilt · **Partial** · **Not in MVP**.
 

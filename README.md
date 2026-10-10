@@ -1,4 +1,4 @@
-# Organize — CRM (MVP)
+# Vyapaarsathi — CRM (MVP)
 
 A CRM for jewellery businesses built on **EspoCRM 10.0.9** (AGPL-3.0). Each company gets its own isolated workspace (instance + database). All jewellery features live in a module under `src/` — EspoCRM core is not modified.
 

@@ -1,4 +1,4 @@
-/* Organize theme over EspoCRM "Espo": emerald primary, gold gem accent, white sidebar.
+/* Vyapaarsathi theme over EspoCRM "Espo": emerald primary, gold gem accent, white sidebar.
    Only theme variables and our own .jw-* components — core selectors are not rewritten. */
 :root {
     --og-primary: #0F766E;          /* emerald (7.1:1 on white) */

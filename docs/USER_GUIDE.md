@@ -1,6 +1,6 @@
-# Organize — User Guide
+# Vyapaarsathi — User Guide
 
-Organize keeps your customers, enquiries, follow-ups, quotations and orders in one place.
+Vyapaarsathi keeps your customers, enquiries, follow-ups, quotations and orders in one place.
 
 ## Getting started (owner)
 

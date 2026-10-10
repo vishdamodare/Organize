@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install one Organize company on Hostinger shared hosting (or any cPanel-style host
+# Install one Vyapaarsathi company on Hostinger shared hosting (or any cPanel-style host
 # where databases are created in the control panel, not by script).
 #
 # Run over SSH from the cloned repo:
@@ -66,7 +66,7 @@ grep -q "'isInstalled' => true" data/config-internal.php || { echo "Install fail
 
 cat <<MSG
 
-✔ Organize is live for "$COMPANY".
+✔ Vyapaarsathi is live for "$COMPANY".
   URL:       $SITE_URL
   Username:  $OWNER
   Password:  $OWNER_PASS   (shown once — change it after first login)

@@ -1,6 +1,6 @@
-# How to Use Organize — Simple Guide
+# How to Use Vyapaarsathi — Simple Guide
 
-Organize is like a digital diary for your jewellery shop. It remembers your customers, what they want, when to call them back, the prices you quoted, and the orders you took. No more notebooks or Excel sheets.
+Vyapaarsathi is like a digital diary for your jewellery shop. It remembers your customers, what they want, when to call them back, the prices you quoted, and the orders you took. No more notebooks or Excel sheets.
 
 ---
 
@@ -57,7 +57,7 @@ If someone leaves: open their name → **Edit** → untick **Is Active** → **S
 
 **Step 3 — Add your customers**
 - *One by one:* **Customers** → **New Customer** → fill the form → **Save**.
-- *Many at once from Excel:* On **Overview**, click **Download CSV template** (this button shows while you have no customers; you can also find the file at `src/client/custom/modules/jewellery/res/customer-import-template.csv`). Fill it in Excel, then **File → Save As → CSV**. In Organize open the import page (on the Overview page, or **⋯ (top-right menu) → Import**), choose the file, match the columns, check the preview, and click **Import**. At the end it shows how many rows were added and which rows had mistakes.
+- *Many at once from Excel:* On **Overview**, click **Download CSV template** (this button shows while you have no customers; you can also find the file at `src/client/custom/modules/jewellery/res/customer-import-template.csv`). Fill it in Excel, then **File → Save As → CSV**. In Vyapaarsathi open the import page (on the Overview page, or **⋯ (top-right menu) → Import**), choose the file, match the columns, check the preview, and click **Import**. At the end it shows how many rows were added and which rows had mistakes.
 
 **Step 4 — Add your products** (optional)
 **Products** → **New Product** → name, SKU code, category, metal, purity, price → **Save**.
@@ -70,7 +70,7 @@ Example: a customer walks in asking for a bridal necklace.
 
 ### ① Save the customer
 **Customers** → **New Customer** → name, phone, city → **Save**.
-If the phone number already exists, Organize warns you, so you don't create the same customer twice.
+If the phone number already exists, Vyapaarsathi warns you, so you don't create the same customer twice.
 
 ### ② Write down what they want (Enquiry)
 **Enquiries** → **New Enquiry** (or open the customer → **Enquiries & Deals** tab → **+**).
@@ -148,7 +148,7 @@ Click any box to open that list.
 
 ## 9. How it works behind the scenes (simple explanation)
 
-Think of Organize as three parts:
+Think of Vyapaarsathi as three parts:
 
 | Part | Like… | What it does |
 |---|---|---|
@@ -256,8 +256,8 @@ These are **not built yet**. Each one plugs into the app's built-in API or into 
 
 | Idea | What you'd get | How it would connect | Rough effort |
 |---|---|---|---|
-| **WhatsApp Business API** (Meta, via Gupshup, Interakt, WATI…) | Send quotation PDFs and follow-up reminders on WhatsApp; WhatsApp chats become enquiries automatically | Message provider's API + a webhook into Organize | Medium (needs a Meta-approved business number) |
-| **Website / Instagram enquiry form** | People filling your website form appear as new Enquiries instantly | Form → Organize API (EspoCRM's built-in Lead Capture creates Leads, not Enquiries, so a small adapter is needed) | Small |
+| **WhatsApp Business API** (Meta, via Gupshup, Interakt, WATI…) | Send quotation PDFs and follow-up reminders on WhatsApp; WhatsApp chats become enquiries automatically | Message provider's API + a webhook into Vyapaarsathi | Medium (needs a Meta-approved business number) |
+| **Website / Instagram enquiry form** | People filling your website form appear as new Enquiries instantly | Form → Vyapaarsathi API (EspoCRM's built-in Lead Capture creates Leads, not Enquiries, so a small adapter is needed) | Small |
 | **SMS** (MSG91, Twilio) | Order-ready and follow-up SMS | SMS provider API | Small |
 | **Live gold & silver rates** (e.g. MetalpriceAPI, GoldAPI, IBJA feed) | Today's rate on the dashboard; product prices auto-calculated by weight × rate + making charge | Rate API checked every few minutes | Medium |
 | **Payments** (Razorpay, PayU, UPI links) | Send a payment link for advance/booking amount; order marked "advance paid" | Payment gateway API + webhook | Medium |
@@ -279,6 +279,6 @@ These are **not built yet**. Each one plugs into the app's built-in API or into 
 
 ## 12. Videos to learn more
 
-Organize is built on **EspoCRM**. Search YouTube for **"EspoCRM tutorial"**. In the videos:
+Vyapaarsathi is built on **EspoCRM**. Search YouTube for **"EspoCRM tutorial"**. In the videos:
 *Accounts* = Customers · *Opportunities* = Sales Pipeline · *Home* = Overview.
-Enquiries, Products, Quotations, Orders and Reports are custom to Organize and are explained in this guide.
+Enquiries, Products, Quotations, Orders and Reports are custom to Vyapaarsathi and are explained in this guide.
