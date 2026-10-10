@@ -216,3 +216,8 @@ body:has(#login) { background: radial-gradient(1200px 600px at 20% -10%, var(--o
 
 /* Grid children may shrink below their content width (tables scroll inside instead) */
 .jw-report-grid > *, .jw-columns > *, .jw-tiles > *, .jw-report-kpis > * { min-width: 0; }
+
+/* Footer: EspoCRM's licence (AGPL §7(b)) requires the "EspoCRM" word to stay visible — keep it, but small and faint. */
+footer .credit { font-size: 0; opacity: .5; }
+footer .credit a { font-size: 10px; color: var(--og-muted); }
+footer .credit a::before { content: "Powered by "; }
