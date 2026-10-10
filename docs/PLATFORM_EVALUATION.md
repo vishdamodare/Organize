@@ -35,7 +35,7 @@
 
 ## Licensing considerations (verified for EspoCRM; re-verify all before commercial launch)
 
-- Verified in the downloaded release: `LICENSE.txt` is AGPL-3.0; `about.md` adds a §7(b) term — *"Appropriate Legal Notices must retain the display of the 'EspoCRM' word."* We keep the EspoCRM logo/footer; our product name "Vyapaarsathi" is used alongside it, not instead of it.
+- Verified in the downloaded release: `LICENSE.txt` is AGPL-3.0; `about.md` adds a §7(b) term — *"Appropriate Legal Notices must retain the display of the 'EspoCRM' word."* The EspoCRM notice is kept on the About page (user menu → About); the footer credit is hidden.
 - AGPL: users interacting with the hosted service are entitled to the source of the modified program, **including our `src/` module**. Plan to publish it (e.g. a public repo link in the About page) — this is a business decision to confirm with legal counsel.
 - Frappe/Twenty licence statements above come from their public repositories, not from a review done in this session; re-check if reconsidering them.
 - Paid EspoCRM extensions (e.g. Sales Pack) are not used; our entity names (`Quotation`, `CustomerOrder`, `JewelleryProduct`) avoid clashing with Sales Pack's `Quote`/`SalesOrder`/`Product`.
