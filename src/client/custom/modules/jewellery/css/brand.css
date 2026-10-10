@@ -159,7 +159,9 @@ body:has(#login) { background: radial-gradient(1200px 600px at 20% -10%, var(--o
                                 radial-gradient(900px 500px at 110% 110%, var(--og-gold-soft), transparent 60%), var(--og-bg); }
 #login .panel { border-radius: 14px; box-shadow: 0 12px 32px rgba(16, 24, 40, .10); border: 1px solid var(--og-border); }
 #login .panel-body { padding: 22px 26px 26px; }
-#login .logo-container { height: 54px; margin: 6px 0 4px 10px; }
+#login .logo-container { width: auto; height: auto; margin: 4px 0 8px; text-align: center; background: transparent; }
+#login .logo-container img { content: url(../img/logo-full.png); display: block; margin: 0 auto; height: 150px; width: auto;
+                              max-width: 100%; mix-blend-mode: multiply; /* hides the PNG's off-white background */ }
 
 /* Overview welcome */
 .jw-welcome { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; margin: 2px 0 16px; }
