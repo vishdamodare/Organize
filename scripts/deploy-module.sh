@@ -21,3 +21,5 @@ rsync -a --delete "$ROOT/src/client/custom/modules/jewellery/" "$INST/client/cus
 cd "$INST"
 php -d error_reporting='E_ALL & ~E_DEPRECATED' command.php rebuild
 php -d error_reporting='E_ALL & ~E_DEPRECATED' command.php clear-cache
+# New ?r= on CSS/JS/templates so browsers fetch the new files; open tabs get a "Refresh" prompt.
+php -d error_reporting='E_ALL & ~E_DEPRECATED' command.php update-app-timestamp

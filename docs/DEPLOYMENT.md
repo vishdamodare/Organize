@@ -63,8 +63,8 @@ File permissions: instance files owned by the PHP-FPM user; `data/`, `custom/`, 
 6. hPanel → **Security → SSL**: confirm the subdomain has SSL (free, usually automatic).
 
 The root `.htaccess` shipped with EspoCRM routes requests into `public/` and blocks `data/`, `custom/`, `vendor/`.
-Module updates: `cd ~/organize && git pull`, copy `src/custom/...` and `src/client/custom/...` into the folder as in the
-script, then `php command.php rebuild` there.
+Module updates: `bash ~/organize/scripts/update-hostinger.sh` (pulls, copies the module, rebuilds, and bumps the
+app timestamp so every browser loads the new CSS/JS — open tabs get a "Refresh" prompt; nobody needs to clear caches).
 
 ## Database
 
